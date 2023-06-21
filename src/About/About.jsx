@@ -1,11 +1,12 @@
 import React from "react";
 
 import { scroll } from "../helpers/methods/helper-methods";
+import { Back } from "../Components/Icons/Back";
 
 export const About = () => (
-    <div className="bg-slate-950 h-screen bg-white text-black bg-no-repeat p-[5rem] w-[100vw]" id="about">
+    <div className="h-screen text-black bg-no-repeat p-[5rem] w-[100vw] gradient" id="about">
         <div onClick={() => scroll("#home")} className="cursor-pointer">
-            <i className="fa fa-arrow-left text-4xl" aria-hidden="true"></i>
+            <Back/>
         </div>
         <div className="flex mt-10">
             <div className="m-auto">
@@ -16,7 +17,7 @@ export const About = () => (
                 </h1>
             </div>
             <div className="p-[5rem] m-auto">
-                <img src="/assets/Jay.jpeg" style={{ width: "60vw", height: "auto", borderRadius: "50%" }} />
+                <img src="/images/Jay.jpeg" style={{ width: "60vw", height: "auto", borderRadius: "50%" }} />
             </div>
         </div>
         <div className="block">
@@ -29,3 +30,5 @@ export const About = () => (
         </div>
     </div>
 );
+
+

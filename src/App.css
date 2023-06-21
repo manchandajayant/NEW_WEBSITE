@@ -62,56 +62,6 @@ body {
   mask: radial-gradient(#000, #0009);
 }
 
-
-
-/* Animation */
-
-/* Views Animation */
-/* ::view-transition-old(root) {
-  animation: fade-and-scale-out 0.5s ease-in-out 1 forwards;
-} */
-/* ::view-transition-new(root) {
-  animation: fade-and-scale-in 10s ease-in-out 1 forwards;
-} */
-
-/* @keyframes fade-and-scale-in {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-} */
-/* @keyframes fade-and-scale-out {
-  from {
-    opacity: 1;
-    transform: scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: scale(0);
-  }
-} */
-/* Second animation */
-/* @keyframes slide-in {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-} */
-/* @keyframes slide-out {
-  from {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-} */
+.gradient {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(213,214,218,1) 100%, rgba(184,185,189,0.8281906512605042) 100%, rgba(93,97,105,0.13071165966386555) 100%);
+}

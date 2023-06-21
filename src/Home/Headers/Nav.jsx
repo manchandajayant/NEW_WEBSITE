@@ -3,6 +3,10 @@ import React from "react";
 import { useTransition } from "../../helpers/hooks/use-transition";
 
 import { scroll } from "../../helpers/methods/helper-methods";
+import { Code } from "../../Components/Icons/Icons";
+import { Home } from "../../Components/Icons/Home";
+import { Person } from "../../Components/Icons/Person";
+import { SquareWave } from "../../Components/Icons/SquareWave";
 
 export const Nav = ({ padding, color, component }) => {
     const Color = color ? "[" + color + "]" : "black";
@@ -21,7 +25,7 @@ export const Nav = ({ padding, color, component }) => {
                                 key={index}
                                 className="text-[16px] hover:text-[24px]"
                             >
-                                <i className={option.iconClass}></i>
+                                <Code />
                                 <h3 className={`text-${Color}`}>{option.heading}</h3>
                             </div>
                         );
@@ -33,14 +37,14 @@ export const Nav = ({ padding, color, component }) => {
                                 key={index}
                                 className="text-[16px] hover:text-[24px]"
                             >
-                                <i className={option.iconClass}></i>
+                                <SquareWave />
                                 <h3 className={`text-${Color}`}>{option.heading}</h3>
                             </div>
                         );
                     }
                     return (
                         <div onClick={() => scroll(option.link)} className="text-[16px] hover:text-[24px]" key={index}>
-                            <i className={option.iconClass}></i>
+                            {option.iconClass ? <i className={option.iconClass}></i> : option.icon}
                             <h3 className={`text-${Color}`}>{option.heading}</h3>
                         </div>
                     );
@@ -52,9 +56,9 @@ export const Nav = ({ padding, color, component }) => {
 
 const getOptions = (Color, component) => {
     const project = { heading: "Work", iconClass: `fa-solid fa-code text-${Color}`, link: "#project" };
-    const media = { heading: "Media", iconClass: `fa-solid fa-wave-square text-${Color}`, link: "#media" };
-    const about = { heading: "About", iconClass: `fas fa-user text-${Color}`, link: "#about" };
-    const home = { heading: "Home", iconClass: `fa-solid fa-house text-${Color}`, link: "#home" };
+    const media = { heading: "Media", icon: <SquareWave />, link: "#media" };
+    const about = { heading: "About", icon: <Person />, link: "#about" };
+    const home = { heading: "Home", icon: <Home />, link: "#home" };
     switch (component) {
         case "about":
             return [home, project, media];
