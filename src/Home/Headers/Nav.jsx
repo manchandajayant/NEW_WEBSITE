@@ -23,7 +23,7 @@ export const Nav = ({ padding, color, component }) => {
                             <div
                                 onClick={() => viewNavigate("/projects")}
                                 key={index}
-                                className="text-[16px] hover:text-[24px] xs:text-[8px] xs:hover:text-[16px]"
+                                className="text-[16px] hover:text-[24px] xs:text-[8px] xs:hover:text-[#fff]"
                             >
                                 <Code />
                                 <h3 className={`text-${Color} xs:text-base`}>{option.heading}</h3>
