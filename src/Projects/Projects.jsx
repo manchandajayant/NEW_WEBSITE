@@ -20,7 +20,7 @@ export const Projects = () => {
         <div className="h-screen bg-no-repeat h-[100vh] block gradient" id="scrollableElement" ref={ref}>
             <Close
                 onClick={() => viewNavigate("/home")}
-                attr={"fixed left-[96%] cursor-pointer m-3 text-3xl text-black"}
+                attr={"fixed cursor-pointer m-3 text-3xl text-black left-[96%] xs:left-[84%]"}
             />
             {WORK_INFO.map((work, index) => {
                 return (
