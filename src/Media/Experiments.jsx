@@ -1,5 +1,4 @@
 import React from "react";
-import YouTube from "react-youtube";
 /**
  * @author
  * @function Experiments
@@ -13,15 +12,11 @@ export const Experiments = () => (
                 return (
                     <div key={index} className="w-[30%] m-5 xs:my-[1rem] mx-auto xs:w-[80%]">
                         <span className="lg:whitespace-nowrap text-sm">{video.title}</span>
-                        <div>
-                            <YouTube
-                                url={video.link}
-                                controls
-                                iframeClassName="rounded-lg w-[250px] xs:h-[auto]"
-                                className="rounded-lg"
-
-                            ></YouTube>
-                        </div>
+                        {video.linkURL ? (
+                            <video url={video.link} controls className="w-[490px] h-[218px] xs:w-[280px] xs:h-[auto]"></video>
+                        ) : (
+                            <div className="aspect-w-16 aspect-h-9">{video.link}</div>
+                        )}
                     </div>
                 );
             })}
@@ -32,14 +27,31 @@ export const Experiments = () => (
 export const videoLinks = [
     {
         title: "Sound generated from words",
-        link: "https://res.cloudinary.com/manjay/video/upload/v1687466375/Images-website/work/ljwm1yjobbmaoj7sncix.mp4",
+        linkURL:
+            "https://res.cloudinary.com/manjay/video/upload/v1687466375/Images-website/work/ljwm1yjobbmaoj7sncix.mp4",
     },
     {
         title: "P5.js visual generator",
-        link: "https://www.youtube.com/watch?v=pqQY84dr0pM",
+        link: (
+            <iframe
+                src="https://www.youtube.com/embed/pqQY84dr0pM"
+                title="YouTube video player"
+                border="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+            ></iframe>
+        ),
     },
     {
         title: "Algorithim to tape",
-        link: "https://www.youtube.com/watch?v=tD2akNby5ag",
+        link: (
+            <iframe
+                src="https://www.youtube.com/embed/tD2akNby5ag"
+                title="YouTube video player"
+                border="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+            ></iframe>
+        ),
     },
 ];
