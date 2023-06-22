@@ -29,7 +29,7 @@ export const WorkInfo = ({ work }) => {
                     <h3 className="text-[20px] w-[100%] xs:text-[10px]">{work.d}</h3>
                 </div>
                 <img
-                    src={`/images/work/${work.img}`}
+                    src={work.img}
                     onMouseOver={() => setHovered(true)}
                     onMouseOut={() => setHovered(false)}
                     className="w-full h-80 object-cover rounded-lg xs:hidden"
