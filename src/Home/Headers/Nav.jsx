@@ -15,7 +15,7 @@ export const Nav = ({ padding, color, component }) => {
     const { viewNavigate } = useTransition();
 
     return (
-        <div className={`mx-[10rem] my-[${Padding}rem] w-full`}>
+        <div className={`mx-[10rem] my-[${Padding}rem] w-full xs:mx-[0]`}>
             <div className="px-1 cursor-pointer flex justify-evenly gap-4">
                 {options.map((option, index) => {
                     if (option.heading === "Work") {
@@ -23,10 +23,10 @@ export const Nav = ({ padding, color, component }) => {
                             <div
                                 onClick={() => viewNavigate("/projects")}
                                 key={index}
-                                className="text-[16px] hover:text-[24px]"
+                                className="text-[16px] hover:text-[24px] xs:text-[8px] xs:hover:text-[16px]"
                             >
                                 <Code />
-                                <h3 className={`text-${Color}`}>{option.heading}</h3>
+                                <h3 className={`text-${Color} xs:text-base`}>{option.heading}</h3>
                             </div>
                         );
                     }
@@ -35,17 +35,17 @@ export const Nav = ({ padding, color, component }) => {
                             <div
                                 onClick={() => viewNavigate("/media")}
                                 key={index}
-                                className="text-[16px] hover:text-[24px]"
+                                className="text-[16px] hover:text-[24px] xs:text-[8px] xs:hover:text-[16px]"
                             >
                                 <SquareWave />
-                                <h3 className={`text-${Color}`}>{option.heading}</h3>
+                                <h3 className={`text-${Color} xs:text-base`}>{option.heading}</h3>
                             </div>
                         );
                     }
                     return (
-                        <div onClick={() => scroll(option.link)} className="text-[16px] hover:text-[24px]" key={index}>
+                        <div onClick={() => scroll(option.link)} className="text-[16px] hover:text-[24px] xs:text-[8px] xs:hover:text-[16px]" key={index}>
                             {option.iconClass ? <i className={option.iconClass}></i> : option.icon}
-                            <h3 className={`text-${Color}`}>{option.heading}</h3>
+                            <h3 className={`text-${Color} xs:text-base`}>{option.heading}</h3>
                         </div>
                     );
                 })}

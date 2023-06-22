@@ -42,11 +42,11 @@ const WORK_INFO = [
         img: "SI.png",
         github: true,
         Icons: [
-            <i className="devicon-react-original colored text-[32px] m-2"></i>,
-            <i className="devicon-flask-original colored text-[32px] m-2"></i>,
-            <i class="devicon-python-plain colored text-[32px] m-2"></i>,
-            <i class="devicon-mysql-plain-wordmark colored text-[32px] m-2"></i>,
-            <i class="devicon-tailwindcss-original-wordmark colored text-[32px] m-2"></i>
+            <i className="devicon-react-original colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-flask-original colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-python-plain colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-mysql-plain-wordmark colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-tailwindcss-original-wordmark colored text-[32px] m-2 xs:text-sm"></i>
         ],
     },
     {
@@ -55,10 +55,10 @@ const WORK_INFO = [
         img: "orah-s.png",
         github: false,
         Icons: [
-            <i class="devicon-angularjs-plain-wordmark colored text-[32px] m-2"></i>,
-            <i className="devicon-react-original colored text-[32px] m-2"></i>,
-            <i class="devicon-typescript-plain colored text-[32px] m-2"></i>,
-            <i class="devicon-sass-original colored text-[32px] m-2"></i>,
+            <i className="devicon-angularjs-plain-wordmark colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-react-original colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-typescript-plain colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-sass-original colored text-[32px] m-2 xs:text-sm"></i>,
         ],
     },
     {
@@ -66,7 +66,7 @@ const WORK_INFO = [
         d: "Feature rich browser based digital audio workstation where you can import, record, trim, split, fade in/out and a lot more written in google closure. Inspired by the demand for easy audio manipulation online.",
         img: "editor.png",
         github: false,
-        Icons: [<i class="devicon-javascript-plain colored text-[32px] m-2"></i>],
+        Icons: [<i className="devicon-javascript-plain colored text-[32px] m-2 xs:text-sm"></i>],
     },
     {
         title: "Hubhopper Studio",
@@ -74,10 +74,10 @@ const WORK_INFO = [
         img: "hh_studio.png",
         github: false,
         Icons:[
-            <i className="devicon-react-original colored text-[32px] m-2"></i>,
-            <i class="devicon-d3js-plain colored text-[32px] m-2"></i>,
-            <i class="devicon-laravel-plain-wordmark colored text-[32px] m-2"></i>,
-            <i class="devicon-mysql-plain-wordmark colored text-[32px] m-2"></i>
+            <i className="devicon-react-original colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-d3js-plain colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-laravel-plain-wordmark colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-mysql-plain-wordmark colored text-[32px] m-2 xs:text-sm"></i>
           ]
     },
     {
@@ -86,10 +86,10 @@ const WORK_INFO = [
         img: "js-vis.png",
         github: true,
         Icons:[
-            <i className="devicon-react-original colored text-[32px] m-2"></i>,
-            <i class="devicon-python-plain colored text-[32px] m-2"></i>,
-            <i class="devicon-d3js-plain colored text-[32px] m-2"></i>,
-            <i class="devicon-nodejs-plain-wordmark colored text-[32px] m-2"></i>
+            <i className="devicon-react-original colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-python-plain colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-d3js-plain colored text-[32px] m-2 xs:text-sm"></i>,
+            <i className="devicon-nodejs-plain-wordmark colored text-[32px] m-2 xs:text-sm"></i>
         ]
     },
 ];

@@ -4,10 +4,10 @@ import { Nav } from "./Nav";
 const Headings = () => {
     return (
         <>
-            <div className="mx-[5rem] my-[1.5rem] w-[100vw] flex" id="home">
+            <div className="mx-[5rem] my-[1.5rem] w-[100vw] flex xs:block xs:mx-[1rem]" id="home">
                 <div className="block">
-                    <h2 className="text-6xl text-black">Jayant Manchanda</h2>
-                    <h4 className="text-4xl my-4 text-black whitespace-nowrap">Developer | Audio Visual Media Designer</h4>
+                    <h2 className="text-6xl text-black xs:text-xl">Jayant Manchanda</h2>
+                    <h4 className="text-4xl my-4 text-black lg:whitespace-nowrap xs:text-xl">Developer | Audio Visual Media Designer</h4>
                 </div>
                 <Nav component={"home"} />
             </div>
