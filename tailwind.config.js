@@ -5,8 +5,8 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                tape: "url(./images/work/Tape.jpeg)",
-                hh: "url(./images/work/hh_studio.png)",
+                tape: "url(https://res.cloudinary.com/manjay/image/upload/v1687461932/Images-website/work/ctgaprxdnzpfqa3yyezf.jpg)",
+                hh: "url(https://res.cloudinary.com/manjay/image/upload/v1687461932/Images-website/ho8gatshdik9xcnb4kwo.jpg)",
             },
             screens: {
                 xs: { max: "556px" },
@@ -16,3 +16,5 @@ module.exports = {
     },
     plugins: [],
 };
+
+

@@ -24,7 +24,6 @@ export const Media = () => {
     return (
         <div
             className="bg-slate-950 h-screen bg-[#fff] bg-no-repeat shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]  h-[100vh] block"
-            id="scrollableElement"
             ref={ref}
         >
             <i
@@ -32,15 +31,21 @@ export const Media = () => {
                 aria-hidden="true"
                 onClick={() => viewNavigate("/home")}
             ></i>
-            {WORK_INFO.map((work, index) => {
-                return (
-                    <div key={index}>
-                        <div className="w-[100vw]">
-                            <WorkInfo work={work} />
-                        </div>
-                    </div>
-                );
-            })}
+            <div>
+                <h1>Music</h1>
+                <div>
+                    Songs for a tired city
+                    <iframe
+                        className="bandcamp_sftc"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=384973154/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
+                        seamless
+                    >
+                        <a href="https://subcontinentalrecords.bandcamp.com/album/in-plain-sight">
+                            In plain sight by Songs for a Tired City
+                        </a>
+                    </iframe>
+                </div>
+            </div>
         </div>
     );
 };
