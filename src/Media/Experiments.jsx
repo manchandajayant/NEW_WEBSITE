@@ -13,7 +13,7 @@ export const Experiments = () => (
                     <div key={index} className="w-[30%] m-5 xs:my-[1rem] mx-auto xs:w-[80%]">
                         <span className="lg:whitespace-nowrap text-sm">{video.title}</span>
                         {video.linkURL ? (
-                            <video url={video.link} controls className="w-[490px] h-[218px] xs:w-[280px] xs:h-[auto]"></video>
+                            <video src={video.link} controls className="w-[490px] h-[218px] xs:w-[280px] xs:h-[auto]"></video>
                         ) : (
                             <div className="aspect-w-16 aspect-h-9">{video.link}</div>
                         )}
