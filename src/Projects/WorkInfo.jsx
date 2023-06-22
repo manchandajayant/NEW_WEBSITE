@@ -6,7 +6,7 @@ export const WorkInfo = ({ work }) => {
         <div className="h-screen bg-white bg-no-repeat p-[5rem] w-[100vw] text-black xs:p-[2rem]">
             <div className="flex justify-evenly mt-[5rem] xs:block">
             <img
-                    src={`/images/work/${work.img}`}
+                    src={work.img}
                     onMouseOver={() => setHovered(true)}
                     onMouseOut={() => setHovered(false)}
                     className="w-full h-40 object-cover rounded-lg hidden xs:block"
