@@ -41,13 +41,15 @@ const WORK_INFO = [
         d: "Experience the immersive simulation of real-life environments with our groundbreaking App. By harnessing the power of web audio API and convolution,it brings you lifelike sounds from various physical places, allowing you to feel as if you're actually there.",
         img: "https://res.cloudinary.com/manjay/image/upload/v1687461933/Images-website/work/lt4gafqq4mjyemzny4uk.png",
         github: true,
+        githubLink:"https://github.com/manchandajayant/That-sounds-interesting",
         Icons: [
             <i className="devicon-react-original colored text-[32px] m-2 xs:text-sm"></i>,
             <i className="devicon-flask-original colored text-[32px] m-2 xs:text-sm"></i>,
             <i className="devicon-python-plain colored text-[32px] m-2 xs:text-sm"></i>,
             <i className="devicon-mysql-plain-wordmark colored text-[32px] m-2 xs:text-sm"></i>,
-            <i className="devicon-tailwindcss-original-wordmark colored text-[32px] m-2 xs:text-sm"></i>
+            <i className="devicon-tailwindcss-original-wordmark colored text-[32px] m-2 xs:text-sm"></i>,
         ],
+        link: "https://that-sounds-interesting.netlify.app/",
     },
     {
         title: "Orah - LMS for schools",
@@ -60,6 +62,7 @@ const WORK_INFO = [
             <i className="devicon-typescript-plain colored text-[32px] m-2 xs:text-sm"></i>,
             <i className="devicon-sass-original colored text-[32px] m-2 xs:text-sm"></i>,
         ],
+        link: "https://www.orah.com/supervise",
     },
     {
         title: "Hubhopper Audio Editor",
@@ -67,29 +70,33 @@ const WORK_INFO = [
         img: "https://res.cloudinary.com/manjay/image/upload/v1687461932/Images-website/work/yjdrqcosw4wountsbnge.png",
         github: false,
         Icons: [<i className="devicon-javascript-plain colored text-[32px] m-2 xs:text-sm"></i>],
+        link: "https://studio.hubhopper.com/editor/index.html",
     },
     {
         title: "Hubhopper Studio",
         d: "A podcast hosting platform catered for the Indian creators, handling creation, RSS generation, distribution and anlytics all under one roof.",
         img: "https://res.cloudinary.com/manjay/image/upload/v1687461932/Images-website/work/ffdg0wx7eajacydlj0pv.png",
         github: false,
-        Icons:[
+        Icons: [
             <i className="devicon-react-original colored text-[32px] m-2 xs:text-sm"></i>,
             <i className="devicon-d3js-plain colored text-[32px] m-2 xs:text-sm"></i>,
             <i className="devicon-laravel-plain-wordmark colored text-[32px] m-2 xs:text-sm"></i>,
-            <i className="devicon-mysql-plain-wordmark colored text-[32px] m-2 xs:text-sm"></i>
-          ]
+            <i className="devicon-mysql-plain-wordmark colored text-[32px] m-2 xs:text-sm"></i>,
+        ],
+        link: "https://hubhopper.com/",
     },
     {
         title: "Visualisation - state of JS survey",
         d: "Transforming raw data into meaningful representations, providing a deeper understanding of the JavaScript ecosystem's state in 2020. Explore the survey findings through interactive and engaging visualizations, offering a comprehensive view of the industry trends and preferences.",
         img: "https://res.cloudinary.com/manjay/image/upload/v1687461932/Images-website/work/i2qpp9aqfvtnloged78b.png",
         github: true,
-        Icons:[
+        githubLink:"https://github.com/manchandajayant/JS_DATA_SURVEY_VIS",
+        Icons: [
             <i className="devicon-react-original colored text-[32px] m-2 xs:text-sm"></i>,
             <i className="devicon-python-plain colored text-[32px] m-2 xs:text-sm"></i>,
             <i className="devicon-d3js-plain colored text-[32px] m-2 xs:text-sm"></i>,
-            <i className="devicon-nodejs-plain-wordmark colored text-[32px] m-2 xs:text-sm"></i>
-        ]
+            <i className="devicon-nodejs-plain-wordmark colored text-[32px] m-2 xs:text-sm"></i>,
+        ],
+        link: undefined,
     },
 ];

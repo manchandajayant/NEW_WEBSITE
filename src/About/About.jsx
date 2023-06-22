@@ -26,9 +26,15 @@ export const About = () => (
         <div className="block">
             <div>jayantmanchanda1@gmail.com</div>
             <div className="flex gap-3 cursor-pointer mt-2">
-                <i className="fa-brands fa-github"></i>
-                <i className="fa-brands fa-linkedin-in"></i>
-                <i className="fa-brands fa-instagram"></i>
+                <a href="https://github.com/manchandajayant" target="_blank">
+                    <i className="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jayantmanchanda/" target="_blank">
+                    <i className="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/jayantmanchanda/" target="_blank">
+                    <i className="fa-brands fa-instagram"></i>
+                </a>
             </div>
         </div>
     </div>
