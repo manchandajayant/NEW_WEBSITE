@@ -6,7 +6,7 @@ import { Back } from "../Components/Icons/Back";
 export const About = () => (
     <div className="h-screen text-black bg-no-repeat p-[5rem] w-[100vw] gradient xs:p-[1rem]" id="about">
         <div onClick={() => scroll("#home")} className="cursor-pointer">
-            <Back/>
+            <Back />
         </div>
         <div className="flex mt-10 xs:block">
             <div className="m-auto">
@@ -17,7 +17,10 @@ export const About = () => (
                 </h1>
             </div>
             <div className="p-[5rem] m-auto xs:p-[3rem]">
-                <img src="/images/Jay.jpeg" className="w-[60vw] h-[auto] rounded-[50%] xs:w-[35vw] xs:m-auto"/>
+                <img
+                    src="https://res.cloudinary.com/manjay/image/upload/v1687461932/Images-website/ho8gatshdik9xcnb4kwo.jpg"
+                    className="w-[60vw] h-[auto] rounded-[50%] xs:w-[35vw] xs:m-auto"
+                />
             </div>
         </div>
         <div className="block">
@@ -30,5 +33,3 @@ export const About = () => (
         </div>
     </div>
 );
-
-
