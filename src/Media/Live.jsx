@@ -1,5 +1,5 @@
 import React from "react";
-
+import YouTube from "react-youtube";
 /**
  * @author
  * @function LiveMusic
@@ -15,13 +15,12 @@ export const LiveMusic = (props) => {
                         <div key={index} className="w-[30%] m-5 xs:m-[0.5rem] xs:w-[45%]">
                             <span className="whitespace-nowrap text-sm">{video.title}</span>
                             <div>
-                                <video
+                                <YouTube
                                     src={video.link}
                                     controls
-                                    width={400}
-                                    height={400}
+                                    iframeClassName="rounded-lg w-[150px] h-[auto]"
                                     className="rounded-lg"
-                                ></video>
+                                ></YouTube>
                             </div>
                         </div>
                     );

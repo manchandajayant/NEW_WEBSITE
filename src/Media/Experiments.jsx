@@ -1,36 +1,33 @@
 import React from "react";
-
+import YouTube from "react-youtube";
 /**
  * @author
  * @function Experiments
  **/
 
-export const Experiments = () => {
-    console.log("heeee");
-    return (
-        <div className="h-screen bg-white bg-no-repeat p-[5rem] w-[100vw] text-black xs:p-[1rem]">
-            <h1 className="text-6xl xs:text-center xs:text-4xl">Experiments</h1>
-            <div className="flex flex-wrap xs:block">
-                {videoLinks.map((video, index) => {
-                    return (
-                        <div key={index} className="w-[30%] m-5 xs:my-[2rem] mx-auto xs:w-[80%]">
-                            <span className="lg:whitespace-nowrap text-sm">{video.title}</span>
-                            <div>
-                                <video
-                                    src={video.link}
-                                    controls
-                                    width={400}
-                                    height={400}
-                                    className="rounded-lg h-[200px] xs:h-[100%]"
-                                ></video>
-                            </div>
+export const Experiments = () => (
+    <div className="h-screen bg-white bg-no-repeat p-[5rem] w-[100vw] text-black xs:p-[1rem]">
+        <h1 className="text-6xl xs:text-center xs:text-4xl">Experiments</h1>
+        <div className="flex flex-wrap xs:block">
+            {videoLinks.map((video, index) => {
+                return (
+                    <div key={index} className="w-[30%] m-5 xs:my-[1rem] mx-auto xs:w-[80%]">
+                        <span className="lg:whitespace-nowrap text-sm">{video.title}</span>
+                        <div>
+                            <YouTube
+                                url={video.link}
+                                controls
+                                iframeClassName="rounded-lg w-[250px] xs:h-[auto]"
+                                className="rounded-lg"
+
+                            ></YouTube>
                         </div>
-                    );
-                })}
-            </div>
+                    </div>
+                );
+            })}
         </div>
-    );
-};
+    </div>
+);
 
 export const videoLinks = [
     {
