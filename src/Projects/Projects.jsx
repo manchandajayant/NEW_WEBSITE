@@ -38,7 +38,7 @@ export const Projects = () => {
 const WORK_INFO = [
     {
         title: "Sounds Interesting",
-        d: "Experience the immersive simulation of real-life environments with our groundbreaking App. By harnessing the power of web audio API and convolution,it brings you lifelike sounds from various physical places, allowing you to feel as if you're actually there.",
+        d: "Experience the immersive simulation of real-life environments with the app. By harnessing the power of web audio API and convolution,it brings you lifelike sounds from various physical places, allowing you to feel as if you're actually there.",
         img: "https://res.cloudinary.com/manjay/image/upload/v1687461933/Images-website/work/lt4gafqq4mjyemzny4uk.png",
         github: true,
         githubLink:"https://github.com/manchandajayant/That-sounds-interesting",
