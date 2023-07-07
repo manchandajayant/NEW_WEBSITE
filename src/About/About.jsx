@@ -15,7 +15,7 @@ export const About = () => (
                     transform abstract ideas into functional products, to bridge the gap between conceptual thinking and
                     practical implementation. 
                 </h1>
-                <h1>
+                <h1 className="text-4xl xs:text-2xl xs:text-center">
                     When i am not developing, I am making visual / audio media or playing music.
                 </h1>
             </div>

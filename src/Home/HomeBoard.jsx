@@ -15,8 +15,8 @@ export const HomeBoard = (props) => {
     }, []);
 
     return (
-        <div id="scrollableElement" ref={ref}>
-            <div>
+        <div id="scrollableElement" ref={ref} style={{background:"linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(213, 214, 218, 1) 100%, rgba(184, 185, 189, 0.8281906512605042) 100%, rgba(93, 97, 105, 0.13071165966386555) 100%);"}}>
+            <div className="lg:my-auto" style={{marginLeft:"-5%"}}>
                 <Headings />
             </div>
             <div>
@@ -25,3 +25,4 @@ export const HomeBoard = (props) => {
         </div>
     );
 };
+
