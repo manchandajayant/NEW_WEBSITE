@@ -11,14 +11,17 @@ export const About = () => (
         <div className="flex mt-10 xs:block">
             <div className="m-auto">
                 <h1 className="text-4xl xs:text-2xl xs:text-center">
-                    I'm Jayant Manchanda, developer and audio visual media designer based out of Toronto, Canada. I
+                    I'm Jayant Manchanda, Front end developer based out of Toronto, Canada. I
                     transform abstract ideas into functional products, to bridge the gap between conceptual thinking and
-                    practical implementation.
+                    practical implementation. 
+                </h1>
+                <h1>
+                    When i am not developing, I am making visual / audio media or playing music.
                 </h1>
             </div>
             <div className="p-[5rem] m-auto xs:p-[3rem]">
                 <img
-                    src="https://res.cloudinary.com/manjay/image/upload/v1687461932/Images-website/ho8gatshdik9xcnb4kwo.jpg"
+                    src="https://res.cloudinary.com/manjay/image/upload/v1687544222/szmyq26okuvn1bmuokr2.jpg"
                     className="w-[60vw] h-[auto] rounded-[50%] xs:w-[35vw] xs:m-auto"
                 />
             </div>

@@ -9,7 +9,7 @@ export const WorkInfo = ({ work }) => {
                     src={work.img}
                     onMouseOver={() => setHovered(true)}
                     onMouseOut={() => setHovered(false)}
-                    className="w-full h-40 object-cover rounded-lg hidden xs:block cursor-pointer"
+                    className="w-full h-40 object-cover rounded-lg hidden xs:block cursor-pointer drop-shadow-[2px_4px_6px_rgba(0,0,0,0.95)]"
                     style={
                         !hovered
                             ? {
