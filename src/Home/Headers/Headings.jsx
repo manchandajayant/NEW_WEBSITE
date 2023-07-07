@@ -6,7 +6,7 @@ const Headings = () => {
         <>
             <div className="mx-[5rem] my-[1.5rem] w-[100vw] flex xs:block xs:mx-[1rem]" id="home">
                 <div className="block">
-                    <h2 className="text-6xl text-black xs:text-xl">Hi, I am Jayant Manchanda</h2>
+                    <h2 className="text-6xl text-black xs:text-xl">Hi, I am Jayant</h2>
                     <h4 className="text-4xl my-4 text-black lg:whitespace-nowrap xs:text-xl">Full Stack Developer based out of Toronto</h4>
                 </div>
                 <Nav component={"home"} />
