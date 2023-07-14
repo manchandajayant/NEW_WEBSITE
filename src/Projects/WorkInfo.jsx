@@ -21,7 +21,7 @@ export const WorkInfo = ({ work }) => {
                     onClick={() => work.link && window.open(work.link, "target:_blank")}
                 />
                 <div className="block px-5 xs:px-[0]">
-                    <h1 className="text-[64px] xs:text-[32px] xs:text-center xs:mt-1">{work.title}</h1>
+                    <h1 className="text-[64px] xs:text-[28px] xs:text-center xs:mt-1">{work.title}</h1>
                     <i
                         className={`fa-brands fa-github text-2xl cursor-pointer xs:text-sm ${
                             work.github ? "text-[#000]" : "text-[#b3aeae]"
