@@ -10,12 +10,12 @@ export const About = () => (
         </div>
         <div className="flex mt-10 xs:block">
             <div className="m-auto">
-                <h1 className="text-4xl xs:text-2xl xs:text-center">
+                <h1 className="text-4xl xs:text-lg xs:text-center">
                     I'm Jayant Manchanda, Front end developer based out of Toronto, Canada. I
                     transform abstract ideas into functional products, to bridge the gap between conceptual thinking and
                     practical implementation. 
                 </h1>
-                <h1 className="text-4xl xs:text-2xl xs:text-center">
+                <h1 className="text-4xl xs:text-lg xs:text-center">
                     When i am not developing, I am making visual / audio media or playing music.
                 </h1>
             </div>
