@@ -5,7 +5,6 @@ import { HomeBoard } from "./Home/HomeBoard";
 import { Projects } from "./Projects/Projects";
 import { Media } from "./Media/Media";
 
-import "react-horizontal-vertical/rhv.css";
 import "./App.css";
 
 const App = () => (
