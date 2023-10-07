@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export const WorkInfo = ({ work }) => {
     const [hovered, setHovered] = useState(false);
+
     return (
         <div className="h-screen bg-white bg-no-repeat p-[5rem] w-[100vw] text-black xs:p-[2rem]">
             <div className="flex justify-evenly mt-[5rem] xs:block">

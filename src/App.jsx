@@ -2,8 +2,8 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
 import { HomeBoard } from "./Home/HomeBoard";
-import { Projects } from "./Projects/Projects";
 import { Media } from "./Media/Media";
+import { Projects } from "./Projects/Projects";
 
 import "./App.css";
 

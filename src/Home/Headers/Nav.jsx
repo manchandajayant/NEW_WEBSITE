@@ -8,14 +8,14 @@ import { Home } from "../../Components/Icons/Home";
 import { Person } from "../../Components/Icons/Person";
 import { SquareWave } from "../../Components/Icons/SquareWave";
 
-export const Nav = ({ padding, color, component }) => {
+export const Nav = ({ padding, color, component, aboutRef }) => {
     const Color = color ? "[" + color + "]" : "black";
     const Padding = padding ? padding : "8";
     const options = getOptions(Color, component);
     const { viewNavigate } = useTransition();
-
+    console.log(aboutRef)
     return (
-        <div className={`mx-[10rem] my-[${Padding}rem] w-full xs:mx-[0]`}>
+        <div className={`my-[${Padding}rem] w-full xs:mx-[0] d-flex`}>
             <div className="px-1 cursor-pointer flex justify-evenly gap-4">
                 {options.map((option, index) => {
                     if (option.heading === "Work") {
@@ -42,8 +42,24 @@ export const Nav = ({ padding, color, component }) => {
                             </div>
                         );
                     }
+                    if (option.heading === "About") {
+                        return (
+                            <div
+                                onClick={() => aboutRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+                                key={index}
+                                className="text-[16px] hover:text-[24px] xs:text-[8px] xs:hover:text-[16px]"
+                            >
+                                <Person />
+                                <h3 className={`text-${Color} xs:text-base`}>{option.heading}</h3>
+                            </div>
+                        );
+                    }
                     return (
-                        <div onClick={() => scroll(option.link)} className="text-[16px] hover:text-[24px] xs:text-[8px] xs:hover:text-[16px]" key={index}>
+                        <div
+                            onClick={() => scroll(option.link)}
+                            className="text-[16px] hover:text-[24px] xs:text-[8px] xs:hover:text-[16px]"
+                            key={index}
+                        >
                             {option.iconClass ? <i className={option.iconClass}></i> : option.icon}
                             <h3 className={`text-${Color} xs:text-base`}>{option.heading}</h3>
                         </div>

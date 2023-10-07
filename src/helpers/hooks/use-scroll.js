@@ -1,14 +1,17 @@
 export const useScroll = () => {
-    const scroll = (ref) => {
+    const scroll = (ref, routeMethod, route) => {
         const scrollableElement = ref.current;
-        const method = (ev) => {
+        const method = (ev,p) => {
+            console.log(p)
             ev.preventDefault();
+            routeMethod(route)
+            // scrollableElement.scrollBy(ev.deltaY, 0);
             scrollableElement.scrollLeft += ev.deltaY + ev.deltaX;
         };
-        scrollableElement.addEventListener("wheel", method);
+        scrollableElement.addEventListener('scroll', method);
 
         return () => {
-            scrollableElement.addEventListener("wheel", method);
+            scrollableElement.addEventListener('scroll', method);
         };
     };
     return { scroll };

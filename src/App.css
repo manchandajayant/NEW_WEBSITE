@@ -5,6 +5,7 @@ html {
 
 .App {
   text-align: center;
+  /* view-transition-name: full-size; */
 }
 
 .App-logo {
@@ -71,4 +72,10 @@ body {
   border: 0;
   width: 350px;
   height: 470px;
+}
+
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.7s;
 }

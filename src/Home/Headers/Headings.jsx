@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav } from "./Nav";
 
-const Headings = () => {
+const Headings = ({aboutRef}) => {
     return (
         <>
             <div className="block text-center xs:px-[6rem] xs:pt-[6rem]">
@@ -10,8 +10,8 @@ const Headings = () => {
                     I write software for the web
                 </h4>
             </div>
-            <div className="mx-[5rem] my-[1.5rem] w-[100vw] flex xs:block xs:mx-[1rem]" id="home">
-                <Nav component={"home"} />
+            <div className="my-[1.5rem] flex xs:block xs:mx-[1rem]" id="home">
+                <Nav component={"home"} aboutRef={aboutRef}/>
             </div>
             {/* <div className={`h-screen bg-tape bg-no-repeat`} style={imageStyle}></div> */}
         </>
