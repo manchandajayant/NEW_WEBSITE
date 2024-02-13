@@ -16,11 +16,15 @@ export const Media = () => {
 
     return (
         <div className="h-screen bg-no-repeat h-[100vh] block gradient" ref={ref}>
-            <Close
-                onClick={() => viewNavigate("/home")}
-                attr={"fixed cursor-pointer m-3 text-3xl text-black left-[96%] xs:left-[84%] z-50"}
-            />
+            <Close onClick={() => viewNavigate("/home")} attr={"fixed cursor-pointer m-3 text-3xl text-black left-[96%] xs:left-[84%] z-50"} />
             <ScrollContainer>
+                <ScrollPage>
+                    <Animator animation={FadeUp}>
+                        <div className="w-[100vw] shadow-[0_0px_100px_-15px_rgba(0,0,0,0.3)] rounded-lg">
+                            <Experiments />
+                        </div>
+                    </Animator>
+                </ScrollPage>
                 <ScrollPage>
                     <Animator animation={FadeUp}>
                         <div className="w-[100vw] shadow-[0_0px_100px_-15px_rgba(0,0,0,0.3)] rounded-lg">
@@ -32,13 +36,6 @@ export const Media = () => {
                     <Animator animation={FadeUp}>
                         <div className="w-[100vw] shadow-[0_0px_100px_-15px_rgba(0,0,0,0.3)] rounded-lg">
                             <LiveMusic />
-                        </div>
-                    </Animator>
-                </ScrollPage>
-                <ScrollPage>
-                    <Animator animation={FadeUp}>
-                        <div className="w-[100vw] shadow-[0_0px_100px_-15px_rgba(0,0,0,0.3)] rounded-lg">
-                            <Experiments />
                         </div>
                     </Animator>
                 </ScrollPage>
